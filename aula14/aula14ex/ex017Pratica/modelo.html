@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Praticando Tabuada</title>
+    <link rel = 'stylesheet' href="estilo.css"> <!-- Referencia o arquivo CSS com as configuraçãoes de estilização da página -->
+</head>
+<body>
+    <header>
+        <h1>Praticando tabuada</h1>
+    </header>
+    <section>
+        <div>
+            <p>Número: 
+                <input type="number" name="numero" id="txtn"> <!-- Recebe o número digitado no campo específico -->
+                <input type="button" value="Calcular tabuada" onclick="tabuada()"> <!-- Botão com a função de gerar a tabuada -->
+            </p>
+        </div>
+        <div>
+            <select name="selecttab" id="seltab" size = 10> <!-- Cria uma caixa, onde é exibida uma lista de conteúdos-->
+                <option>Digite um número"</option> <!-- Permite inserir opções nas linhas de conteúdo que compõem essa caixa -->
+            </select>
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script> <!-- Referencia o Script, contendo o código com o lágica da aplicação -->
+</body>
+</html>

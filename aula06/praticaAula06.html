@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> /* Aqui estilizamos o elemento do corpo da página */
+        body {
+         font: normal 16pt Arial;
+        }
+                
+    </style>
+    
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var num1 = Number.parseInt(window.prompt('Digite um número qualquer: ')) // Necessário fazer o Parse, pois será usado na soma abaixo
+        var num2 = Number.parseInt(window.prompt('Digite mais um número: ')) // Necessário fazer o Parse pelo mesmo motivo        
+        document.write(`<br>Olá <strong>${nome}</strong>, você sabe como somar <strong>${num1}</strong> + <strong>${num2}</strong>?</br>`)
+        window.alert('Então vamos somar!')
+        var soma = num1 + num2
+        document.write(`A soma dos dois números é igual a: ${soma}`)
+        num1.toLacaleString('pt-BR', {style: 'currency, currency: 'BRL''})
+    </script>
+</body>
+</html>

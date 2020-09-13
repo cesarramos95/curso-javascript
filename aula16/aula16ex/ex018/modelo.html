@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de exercício</title>
+    <link rel = 'stylesheet' href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section>
+        <div>
+            <p>Entre com um número entre 0 e 100:
+                <input type="number" name="numero" id="num" min='0'>
+                <input type="button" value="Adicionar" onclick="adicionar()">
+            </p>
+                <select name="nAdicionados" id="" size = 10>
+                    <option>Entre com os números acima</option>
+                </select>
+            <p> 
+            </p>
+            <p>
+                <input type="button" value="Finalizar" onclick="finalizar()">
+            </p>
+        </div>
+        <div id = 'resultado'>
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
